@@ -1,9 +1,8 @@
 from config import *
-import flet as ft
+import asyncio
 
-async def main(page : ft.Page):
-    page.title = TITLE
-    await page.add_async(ft.Text("It's CubeFlet"))
+async def main():
+    print("It's cubeflet")
 
 if __name__ == '__main__':
-    ft.app(target=main)
+    asyncio.run(main())
