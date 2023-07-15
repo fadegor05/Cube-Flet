@@ -1,10 +1,13 @@
 from config import *
-import asyncio
+#from controller import compare
+from initialization import init
 
-# Main async function
-async def main():
+# Main function
+def main():
     print("It's cubeflet")
+    init()
+    #compare()
 
 if __name__ == '__main__':
-    # Starting main async function
-    asyncio.run(main())
+    # Starting main function
+    main()
