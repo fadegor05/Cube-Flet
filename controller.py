@@ -2,6 +2,7 @@ from config import *
 import datetime
 from data import save, load
 import os
+# ! remove this file
 
 # Get current files and directories on pc function
 '''

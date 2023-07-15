@@ -1,12 +1,14 @@
 from config import *
+# ! remove controller.py
 #from controller import compare
 from initialization import init
 
-# Main function
+# * Main function
 def main():
-    #print("It's cubeflet")
+    # Init app
     init()
-    #compare()
+
+
 
 if __name__ == '__main__':
     # Starting main function
