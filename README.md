@@ -1,6 +1,7 @@
 # Cube-Flet
 Cube Flet is a minecraft instance updater for <b>CubeStudio</b>
 There are a few amazing features that are included in this project.
+A part of this project is counting <a href="https://github.com/fadegor05/Cube-API"><b>Cube-API</b></a>
 
 ## Features
 ### CubeFast (in process)
