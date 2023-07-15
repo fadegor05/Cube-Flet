@@ -6,6 +6,14 @@ CUBEFLET_VERSION = 0
 DATA_FILE = 'data.json'
 # Current instance directory (temporarily)
 CURRENT_INSTANCE = './../versions'
+# Server address
+SERVER_ADDRESS = 'http://127.0.0.1:5000/get_latest'
+# Encryption of launchers
+LAUNCHERS_ENCRYPT = {
+    'tl': 'TLauncher Legacy',
+    'cf': 'CurseForge',
+    'mc': 'MultiMC'
+}
 # Base Json File
 BASE_JSON = {
     "info": {

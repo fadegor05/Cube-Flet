@@ -4,7 +4,7 @@ from initialization import init
 
 # Main function
 def main():
-    print("It's cubeflet")
+    #print("It's cubeflet")
     init()
     #compare()
 

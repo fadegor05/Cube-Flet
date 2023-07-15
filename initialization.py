@@ -1,10 +1,11 @@
 from config import *
 import json, os.path
 from data import load_json, save_json
+from updates import update_loop
 
 # Main init function
 def init():
-    data_init() if not os.path.isfile(DATA_FILE) else subinit()
+    data_init() if not os.path.isfile(DATA_FILE) else main_loop(False)
 
 def get_username():
     # Greeting message
@@ -44,7 +45,14 @@ def data_init():
     data['launchers'][data['info']['priority_launcher']]['folder'] = get_launcher_path()
     # Saving json file with collected data
     save_json(DATA_FILE, data)
+    main_loop(True)
 
+# Printing greeting out
+def print_greetings(data):
+    print(f'\nПриветствуем, {data["info"]["username"]}\nПроверка обновлений в {LAUNCHERS_ENCRYPT[data["info"]["priority_launcher"]]}...\n')
 
-def subinit():
-    pass
+# 
+def main_loop(is_first : bool):
+    data = load_json(DATA_FILE)
+    print_greetings(data)
+    update_loop(is_first)
